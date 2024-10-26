@@ -15,7 +15,7 @@ const Form = (props) => {
     {
         event.preventDefault();
 
-        if(nome != '' && cargo != '' && imagem != '' && time != ''){
+        if(nome !== '' && cargo !== '' && imagem !== '' && time !== ''){
             props.timeSubmit({
                 nome, cargo, imagem, time
             })
@@ -26,8 +26,6 @@ const Form = (props) => {
         }else{
             alert('Preencha os campos!')
         }
-
-        
     }
 
     return (

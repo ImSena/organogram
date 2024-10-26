@@ -8,6 +8,7 @@ const ListDropdown = (props) => {
             </label>
 
             <select required={props.required} value={props.value} onChange={(event)=>props.aoAlterado(event.target.value)}>
+                <option value="" selected hidden>Selecione o time</option>
                 {
                     props.item.map(item => <option key={item}>{item}</option>)
                 }
