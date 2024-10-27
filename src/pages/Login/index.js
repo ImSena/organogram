@@ -8,9 +8,9 @@ const Login = () => {
   const navigate = useNavigate();
   const [credentials, setCredentials] = useState({ email: "", password: "" });
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault();
     login(credentials);
-    navigate("/");
   };
 
   return (
